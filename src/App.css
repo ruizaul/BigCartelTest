@@ -1,27 +1,26 @@
-body {
-  position: absolute;
-  width: 100%;
+body,
+html {
   height: 100vh;
-  background-color: white;
 }
 
 .navbar-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 2em;
-  padding: 2em 20em 2em 20em;
+  gap: 45em;
+  padding: 2em 30em 2em 30em;
 }
 
 .card-container {
   display: grid;
   grid-auto-rows: 22rem;
-  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-  grid-gap: 6em;
-  width: 50%;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  grid-gap: 20px 20px;
+  max-width: 50%;
+  height: 100%;
   margin: auto;
-  padding-bottom: 8rem;
+  padding: 10px;
 }
 
 .card-content {
@@ -29,38 +28,48 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: 120%;
+  gap: 5px;
+  max-width: auto;
+  height: 100%;
+  border-radius: 2%;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .card-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  border-radius: 5%;
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
 }
 
 .card-img img {
-  height: 250px;
-  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
 }
 
 .card-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  gap: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 100%;
+  max-width: 100%;
   font-size: medium;
-  text-align: center;
+  text-align: justify;
   white-space: normal;
+  padding: 5px;
+  border-radius: 5%;
 }
 
 .card-text p {
-  padding: 10px;
+  padding: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
@@ -92,12 +101,14 @@ body {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .card-container {
-    padding: 1px;
+    padding: 5px;
+    min-width: 80%;
   }
 
   .navbar-container {
     padding: 2em 2em 2em 2em;
+    gap: 6em;
   }
 }
