@@ -1,3 +1,5 @@
+(Disculpa por la tardanza, queria que quedara lo mejor posible :D)
+
 # Tech Challenge
 
 > Estimated time: 90 min
